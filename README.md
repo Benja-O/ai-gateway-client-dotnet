@@ -2,7 +2,7 @@
 
 Librería genérica para que **cualquier app .NET** hable con modelos LLM sin saber
 qué proveedor hay detrás. La app pide por **tarea semántica** (`investigacion`,
-`contexto-largo`, `chat`, `privado`…) y el [proxy LiteLLM](../../litellm-proxy/README.md)
+`contexto-largo`, `chat`, `privado`…) y el [proxy LiteLLM](https://github.com/BerriAI/litellm)
 (AI Gateway) decide el modelo real, aplica fallback automático por cuotas free y
 maneja cooldowns. Construida sobre **Microsoft.Extensions.AI**.
 
@@ -105,9 +105,9 @@ Cada app puede **extender o redefinir** el mapeo en su configuración.
 ## Correr la demo
 
 ```powershell
-# 1) Proxy LiteLLM arriba (puerto 4000):  cd ..\..\litellm-proxy; .\start.ps1
+# 1) Proxy LiteLLM arriba en el puerto 4000
 # 2) Ejecutar sample
-cd F:\Desarrollo\Deepseek\orchestrator-dotnet
+cd ai-gateway-client-dotnet
 dotnet run --project src\Orchestrator.SampleApp
 ```
 
