@@ -1,0 +1,16 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+artifacts/
+
+# Secretos y configuracion local
+appsettings.Development.json
+appsettings.Local.json
+.env
+secrets.json
+
+# Evidencias de corridas (fuera de git por diseno)
+.orquestador/
+**/.orquestador/evidencias/
